@@ -1,0 +1,37 @@
+external ip: 34.76.145.164
+internal ip: 10.132.0.2
+
+to create key with gcp
+
+$ ssh-keygen -t rsa -f gcp_key -C lordjames_gcp -b 2048
+
+to access your vm -- the -i is for identity
+ssh -i ~/.ssh/gcp_key lordjames_gcp@34.76.145.164
+
+htop
+
+wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh -- to install anaconda
+bash Anaconda3-2022.10-Linux-x86_64.sh --to stall 
+
+ssh de-zoomcamp -- to ssh the VM
+
+less .bashrc   -- this is the file that bash edit each time we run the machine
+
+use q command to quit less
+sudo apt-get update
+sudo apt-get install docker.io  -- to install docker
+
+install remote ssh for using vscode in cloud
+
+
+go to https://github.com/DataTalksClub/data-engineering-zoomcamp and clone using https
+
+so git clone https://github.com/DataTalksClub/data-engineering-zoomcamp.git
+
+docker without sudo https://github.com/sindresorhus/guides/blob/main/docker-without-sudo.md
+
+after installing docker, install docker compose from https://github.com/docker/compose/releases/tag/v2.16.0 and 
+wget https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-linux-x86_64 -O docker-compose  -- inside a folder call bin for all exe files
+
+chmod +x docker-compose  -- to change the file to an exe file
+ nano .bashrc  -- to open bashrc file and make docker compose accessible from any directory use -- export PATH="${HOME}/bin:${PATH}"
